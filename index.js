@@ -12,9 +12,10 @@ function parseDonutAPIData(data) {
       var src = JSON.stringify(data.Items[iCount].URL);
       var name = JSON.stringify(data.Items[iCount].Name);
       document.getElementById("donut_list").innerHTML +=
-        `<h1>${name}</h1>` + "<br>";
-      document.getElementById("donut_list").innerHTML +=
-        `<img src=${src} />` + "<br>";
+        `<div class="col-4 card">
+            <h1>${name}</h1>
+            <img src=${src} />
+        </div>` 
     }
   }
 }
