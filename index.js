@@ -11,11 +11,17 @@ function parseDonutAPIData(data) {
     for (let iCount = 0; iCount < data.Items.length; iCount++) {
       var src = JSON.stringify(data.Items[iCount].URL);
       var name = JSON.stringify(data.Items[iCount].Name);
+      var pk = JSON.stringify(data.Items[iCount].pk);
+      var sk = JSON.stringify(data.Items[iCount].sk);
+      link = JSON.stringify(data.Items[iCount].pk + "!" + data.Items[iCount].sk);
       document.getElementById("donut_list").innerHTML +=
         `<div class="col-4 card">
             <h1>${name}</h1>
             <img src=${src} />
-        </div>` 
+            <a href=/donut.html?donut=${link}>
+              <button type="button" class="btn btn-secondary" type="submit">See more</button>
+            </a>
+        </div> `;
     }
   }
 }
