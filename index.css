@@ -1,0 +1,9 @@
+.card:nth-child(1){
+    display : none;
+  }
+  .card{
+    margin : 20px;
+    padding : 20px;
+    background : #eee;
+    border : 1px solid #333;
+  }
