@@ -1,3 +1,5 @@
+<script src="index.js"></script>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,29 +10,7 @@
   </head>
   <body>
     <!--The sensor listings will appear in the following tag -->
-    <p id="sensorlistings"></p>
-    <button onclick="showSensorItems()">Show Sensor Items</button>
-    <script>
-      // replace this with your own custom APIlet API
-      APIUrl = "https://ck8vh2jy5l.execute-api.us-east-1.amazonaws.com";
-      function showSensorItems() {
-        fetch(APIUrl + "/items")
-          .then((response) => response.json())
-          .then((data) => parseSensorAPIData(data));
-      }
-      function parseSensorAPIData(data) {
-        // An array of Items is returned, loop through them and print their values
-        if (data.Items.length > 0) {
-          for (let iCount = 0; iCount < data.Items.length; iCount++) {
-            var src = JSON.stringify(data.Items[iCount].URL);
-            var name = JSON.stringify(data.Items[iCount].Name);
-            document.getElementById("sensorlistings").innerHTML +=
-              `<h1>${name}</h1>` + "<br>";
-            document.getElementById("sensorlistings").innerHTML +=
-              `<img src=${src} />` + "<br>";
-          }
-        }
-      }
-    </script>
+    <p id="donut_list"></p>
+    <button onclick="showDonutItems()">Show Donut Items</button>
   </body>
 </html>
