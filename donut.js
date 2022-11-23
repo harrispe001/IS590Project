@@ -7,5 +7,4 @@ function get_donut() {
     console.log("Value is: " + pair[1]);
     }
 
-
 }
