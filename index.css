@@ -14,7 +14,9 @@ body {
 }
 
 /* Remove extra left and right margins, due to padding */
-.row {margin: 0 -5px;}
+.row {
+  margin: 0 -5px;
+}
 
 /* Clear floats after the columns */
 .row:after {
@@ -38,4 +40,46 @@ body {
   padding: 16px;
   text-align: center;
   background-color: #f1f1f1;
+}
+
+nav {
+  padding-bottom: 10px;
+}
+
+.card a {
+  color: #0b6a38;
+  font-family: "Darker Grotesque", sans-serif;
+  text-align: center;
+}
+
+.card a:hover {
+  text-decoration: none;
+  color: #1ab361;
+}
+
+.card img {
+  transform: translateX(-50%);
+  left: 50%;
+  position: relative;
+}
+
+.card:hover {
+  transition: 0.2s;
+  transform: scale(1.2);
+  z-index: 999;
+}
+
+footer {
+  margin-top: 75px;
+}
+
+.jumbo {
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+.smjumbo {
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 1.5rem;
 }
