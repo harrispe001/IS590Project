@@ -26,14 +26,19 @@ function parseDonutAPIData(data) {
     }
 }
 
-function active() {
-    var itemContainer = document.getElementById("navbar");
-    var items = itemContainer.getElementsByClassName("nav-item");
-    for (var i = 0; i < items.length; i++) {
-        items[i].addEventListener("load", function () {
-            var current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace(" active", "");
-            this.className += " active";
-        });
+function activeNavElement(activeId) {
+    var Ids = ["Home", "About", "Arch"];
+    for (var i in Ids) {
+        var element = document.getElementById(Ids[i]);
+        var child = element.children[0];
+        if (Ids[i] == activeId) {
+            element.classList.add("active");
+            child.classList.add("active");
+        } else {
+            if (element.classList.contains("active")) {
+                element.classList.remove("active");
+                child.classList.remove("active");
+            }
+        }
     }
 }

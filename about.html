@@ -19,8 +19,13 @@
                 $("#footer").load("footer.html");
             });
         </script>
+        <!-- <script>
+            $(document).ready(function () {
+                activeNavElement("About");
+            });
+        </script> -->
     </head>
-    <body>
+    <body onload="activeNavElement('About');">
         <div id="header"></div>
 
         <!-- About Content -->
