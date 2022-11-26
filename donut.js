@@ -31,13 +31,22 @@ function parseOneDonut(data) {
 
     document.getElementById(
         "donut_list"
-    ).innerHTML += `<div class="col-6 text-center">
-      <img src=${src} />
-      <h2>${price}</h2>
-    </div> 
-    <div class="col-6 text-center">
-      <h2 class="title">${name}</h1>
-      <p>${quote}</p>
-      <a href="https://s3.amazonaws.com/kkd-e1-images.kktestkitchen.com/ecomm/nutrition/11010-nutrition.pdf" id="ctl00_plcMain_linkNutritionCta" class="btn btn-primary shadow cta-primary nutrition" data-track="item-detail-nutrition" target="_blank"><span>Nutritional &amp; Allergen Info</span></a>
+    ).innerHTML += 
+    `
+
+    <div class="col-12 text-center"  style="background-color: #007550; color: white" >
+      <h1 class="title">${name}</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-6 text-center">
+        <img src=${src} />
+        <h2>$${price}</h2>
+      </div> 
+      <div class="col-6 text-center my-auto">
+
+        <p>${quote}</p>
+        <a href="${allergens}" id="ctl00_plcMain_linkNutritionCta" class="btn btn-primary shadow cta-primary nutrition" data-track="item-detail-nutrition" target="_blank"><span>Nutritional &amp; Allergen Info</span></a>
+      </div>
     </div>`;
 }
