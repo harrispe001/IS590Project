@@ -1,33 +1,53 @@
+<!-- jquery -->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"
+></script>
+
+<script>
+  $(function () {
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+  });
+</script>
+
 <!DOCTYPE html>
+<head>
+  <link type="icon" href="./donut_images/donut-1.png" />
+</head>
 <html lang="en">
-    <head>
-        <script src="index.js"></script>
-        <link rel="stylesheet" href="index.css" />
-        <link type="icon" href="./donut_images/donut-1.png" />
-        <!-- jquery -->
-        <script
-            src="https://code.jquery.com/jquery-3.3.1.js"
-            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-            crossorigin="anonymous"
-        ></script>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script>
-            $(function () {
-                $("#header").load("header.html");
-                $("#footer").load("footer.html");
-            });
-        </script>
-    </head>
-    <body>
-        <div id="header"></div>
+  <body>
+    <div id="header"></div>
+    <br />
+    <br />
+    <div
+      class="col-12 text-center"
+      style="background-color: #007550; color: white"
+    >
+      <h1 class="title">Our Team</h1>
+    </div>
 
-        <!-- About Content -->
-        <div class="container">
-            <div class="row" id="donut_list"></div>
-        </div>
+    <!-- Team Member -->
+    <div class="row">
+      <div class="col-6 text-center">
+        <img
+          src="other_images/website_Spencer_and_Tanner_Harrison_-_Wolf_em_Stick_inventors_1_480x480.jpg"
+          height="200"
+        />
+      </div>
+      <div class="col-6 text-center my-auto">
+        <h2>Spencer Harrison</h2>
+        <p>
+          Spencer enjoys reading books, skiing, and boating. A recent hobby has
+          been playing pickleball.
+        </p>
+      </div>
+    </div>
 
-        <div id="footer"></div>
-    </body>
+    <div id="footer"></div>
+  </body>
 </html>
+
+<!-- <a href=donut.html?donut=${link}> -->
+<!-- <a href=donut.html?donut=${link} onclick="sessionStorage.setItem("donut", {});"> -->
