@@ -124,3 +124,13 @@ footer {
 .nav-link {
     color: #0b6a38;
 }
+
+.my-auto {
+    padding-bottom: 10px;
+}
+
+#about-bar {
+    margin-top: 50px;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
