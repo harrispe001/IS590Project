@@ -16,9 +16,9 @@ function parseDonutAPIData(data) {
                 "/" + data.Items[iCount].pk + "!" + data.Items[iCount].sk;
             document.getElementById(
                 "donut_list"
-            ).innerHTML += `<div class="col-3 card">
+            ).innerHTML += `<div class="col-xl-3 col-lg-4 col-sm-8 col-xs-10  col-md-6 card">
         <a href="donut.html?donut=${link}">
-            <img src=${src} />
+            <img class="img-responsive" src=${src} />
               <h2>${name}</h1>
             </a>
         </div> `;
