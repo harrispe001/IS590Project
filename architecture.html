@@ -1,42 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script src="index.js"></script>
-    <link rel="stylesheet" href="index.css" />
-    <link type="icon" href="./donut_images/donut-1.png" />
-    <!-- jquery -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.js"
-      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous"
-    ></script>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script>
-      $(function () {
-        $("#header").load("header.html");
-        $("#footer").load("footer.html");
-      });
-    </script>
-  </head>
-  <body onload="activeNavElement('Arch');">
-    <div id="header"></div>
+    <head>
+        <script src="index.js"></script>
+        <link rel="stylesheet" href="index.css" />
+        <link type="icon" href="./donut_images/donut-1.png" />
+        <!-- jquery -->
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"
+        ></script>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script>
+            $(function () {
+                $("#header").load("header.html");
+                $("#footer").load("footer.html");
+            });
+        </script>
+    </head>
+    <body onload="activeNavElement('Arch');" class="bg-light">
+        <div id="header"></div>
 
-    <div class="container">
-      <!-- Header -->
+        <div class="container">
+            <!-- Header -->
 
-      <div
-        class="col-12 text-center"
-        style="background-color: #007550; color: white"
-        id="about-bar"
-      >
-        <h1 class="title">Backend Architecture</h1>
-      </div>
-      <!-- Body -->
-    </div>
-    <div id="footer"></div>
-  </body>
+            <div
+                class="col-12 text-center"
+                style="background-color: #007550; color: white"
+                id="about-bar"
+            >
+                <h1 class="title">Backend Architecture</h1>
+            </div>
+            <div class="row">
+                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 sm-card">
+                    <a href="./My Estimate.xlsm" download
+                        >Download our Price Estimate</a
+                    >
+                </div>
+                <div class="col-xl-8 col-lg-8 col-md-6 col-sm-6 img-holder">
+                    <img class="img-fluid" src="./other_images/IS590R.png" />
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-3"></div>
+            </div>
+            <!-- Body -->
+        </div>
+        <div id="footer"></div>
+    </body>
 </html>
 
 <!-- <a href=donut.html?donut=${link}> -->
